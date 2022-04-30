@@ -11,6 +11,7 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -75,7 +76,7 @@
     </header>
     <div class="header-content">
         <div class="container">
-            <div class="column-1">
+            <div data-aos="fade-right" class="column-1">
                 <h1 class="header-title">Hi, I'm Avinash </h1>
                 <p class="text">
                     I'm a Freelance Front End Developer.
@@ -83,7 +84,7 @@
                 <!-- <a href="#" class="btn">Download CV</a> -->
             </div>
 
-            <div class="column-2 image">
+            <div data-aos="fade-left"  class="column-2 image">
                 <img src="./img/shapes/points2.png" class="points points2" alt="" />
                 <img src="img/avi.png" class="img-1" alt="" />
             </div>
@@ -92,7 +93,7 @@
     <h3 id="about" class="about-title">About me</h3>
     <div class="about-content">
         <div class="container">
-            <div class="about-column-1">
+            <div data-aos="fade-right"  class="about-column-1">
                 <h3 class="about-intro">Hello,</h3>
                 <p class="about-text">
                     My name is Avinas Mehta. I make Front End website. I started learning coding because I wana to make
@@ -146,14 +147,14 @@
                 </div>
             </div>
 
-            <div class="about-column-2 image">
+            <div data-aos="fade-left" class="about-column-2 image">
                 <img src="./img/shapes/points2.png" class="points points2" alt="" />
                 <img src="img/skill.png" class="img-2" alt="" />
             </div>
         </div>
     </div>
 
-    <section id="projects" class="projects">
+    <section data-aos="fade-up" id="projects" class="projects">
         <header>
             <h2 class="title-project">Projects</h2>
         </header>
@@ -225,7 +226,7 @@
 
     </section>
 
-    <section id="contact" class="contact">
+    <section data-aos="fade-up" id="contact" class="contact">
         <header>
             <h2 class="title-contact">Contact</h2>
         </header>
@@ -265,6 +266,13 @@
         </div>
     </section>
     <script src="app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 900,
+      });
+    </script>
 </body>
 
 </html>
